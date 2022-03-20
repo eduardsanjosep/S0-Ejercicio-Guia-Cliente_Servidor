@@ -35,12 +35,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.altura = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Alto = new System.Windows.Forms.RadioButton();
             this.Longitud = new System.Windows.Forms.RadioButton();
             this.Bonito = new System.Windows.Forms.RadioButton();
             this.button3 = new System.Windows.Forms.Button();
-            this.altura = new System.Windows.Forms.TextBox();
+            this.Palindromo = new System.Windows.Forms.RadioButton();
+            this.Mayuscula = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +93,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(161, 150);
+            this.button2.Location = new System.Drawing.Point(181, 192);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
@@ -102,6 +104,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.Mayuscula);
+            this.groupBox1.Controls.Add(this.Palindromo);
             this.groupBox1.Controls.Add(this.altura);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.Alto);
@@ -112,10 +116,17 @@
             this.groupBox1.Controls.Add(this.nombre);
             this.groupBox1.Location = new System.Drawing.Point(45, 141);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(363, 202);
+            this.groupBox1.Size = new System.Drawing.Size(363, 239);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Peticion";
+            // 
+            // altura
+            // 
+            this.altura.Location = new System.Drawing.Point(10, 114);
+            this.altura.Name = "altura";
+            this.altura.Size = new System.Drawing.Size(100, 20);
+            this.altura.TabIndex = 11;
             // 
             // label3
             // 
@@ -171,12 +182,27 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // altura
+            // Palindromo
             // 
-            this.altura.Location = new System.Drawing.Point(10, 114);
-            this.altura.Name = "altura";
-            this.altura.Size = new System.Drawing.Size(100, 20);
-            this.altura.TabIndex = 11;
+            this.Palindromo.AutoSize = true;
+            this.Palindromo.Location = new System.Drawing.Point(131, 137);
+            this.Palindromo.Name = "Palindromo";
+            this.Palindromo.Size = new System.Drawing.Size(180, 17);
+            this.Palindromo.TabIndex = 12;
+            this.Palindromo.TabStop = true;
+            this.Palindromo.Text = "Dime si mi nombre es palíndromo";
+            this.Palindromo.UseVisualStyleBackColor = true;
+            // 
+            // Mayuscula
+            // 
+            this.Mayuscula.AutoSize = true;
+            this.Mayuscula.Location = new System.Drawing.Point(131, 160);
+            this.Mayuscula.Name = "Mayuscula";
+            this.Mayuscula.Size = new System.Drawing.Size(177, 17);
+            this.Mayuscula.TabIndex = 13;
+            this.Mayuscula.TabStop = true;
+            this.Mayuscula.Text = "Dame mi nombre en mayúsculas";
+            this.Mayuscula.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -213,6 +239,8 @@
         private System.Windows.Forms.RadioButton Alto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox altura;
+        private System.Windows.Forms.RadioButton Mayuscula;
+        private System.Windows.Forms.RadioButton Palindromo;
     }
 }
 
